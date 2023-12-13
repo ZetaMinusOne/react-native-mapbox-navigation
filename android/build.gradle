@@ -24,6 +24,7 @@ def safeExtGet(prop, fallback) {
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'maven-publish'
+apply plugin: "com.facebook.react"
 
 buildscript {
     ext.kotlin_version = '1.5.21'
@@ -88,7 +89,6 @@ repositories {
 
 dependencies {
     //noinspection GradleDynamicVersion
-    implementation 'com.facebook.react:react-native:+'  // From node_modules
     implementation "com.mapbox.navigation:android:2.17.8"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
